@@ -2,7 +2,7 @@
 
 Firmware em MicroPython para uma lixeira inteligente com ESP32 e sensor
 ultrassônico HC-SR04. A placa mede o preenchimento, identifica possíveis coletas
-e envia telemetria a um servidor EcoSmart pela rede Wi-Fi.
+e envia telemetria a um servidor EcoSmart pela rede Wi-Fi. Trata-se de um projeto de faculdade para a cadeira de: IoT - Cidades Inteligentes
 
 ## Arquivos
 

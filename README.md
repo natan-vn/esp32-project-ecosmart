@@ -20,26 +20,6 @@ e envia telemetria a um servidor EcoSmart pela rede Wi-Fi.
 O firmware tenta importar `requests` e, se não estiver disponível, usa `urequests`.
 Garanta que a biblioteca usada esteja disponível na instalação MicroPython da placa.
 
-## Segurança antes de publicar ou instalar
-
-`config.py` contém configurações específicas da instalação. **Antes de enviar esta
-pasta ao GitHub, revise o arquivo e substitua/remova qualquer SSID, senha Wi-Fi,
-chave de API, endereço interno ou outro dado privado.** Não publique chaves reais
-nem senhas, mesmo em repositórios privados. Se algum segredo já tiver sido
-publicado, troque a senha correspondente e revogue/regenere a chave da API.
-
-Configure pelo menos `WIFI_SSID`, `WIFI_PASS`, `LIXEIRA_ID`, `API_URL` e `API_KEY`
-com valores da sua própria instalação. O endereço `API_URL` deve apontar para o
-servidor, por exemplo:
-
-```text
-http://IP_DO_SERVIDOR:8000/api/v1/telemetria
-```
-
-Não use `localhost` ou `127.0.0.1`: na ESP32 eles apontariam para a própria placa,
-não para o computador servidor. O firmware fornecido usa HTTP; opere-o somente em
-uma rede confiável e não exponha a porta do servidor diretamente à internet.
-
 ## Ligação do protótipo configurado
 
 Os pinos abaixo correspondem aos valores iniciais de `config.py`. Confira a
